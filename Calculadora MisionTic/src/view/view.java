@@ -1,10 +1,14 @@
 package view;
 
+import java.text.DecimalFormat;
+
 import javax.swing.JOptionPane;
 
 import model.Calculadora;
 
 public class view {
+
+	private DecimalFormat df = new DecimalFormat("#.00");
 
 	private static final String MAIN_MENU = "Seleccione una opcion \n1.) Realizar una operacion\n2.) Salir";
 	private static final String OPERATION_MENU = "Seleccione una operacion \n" + "1.) Suma" + "\n2.) Resta"
@@ -52,22 +56,22 @@ public class view {
 
 		switch (opcion) {
 		case "1":
-			JOptionPane.showMessageDialog(null, calc.sum());
+			JOptionPane.showMessageDialog(null, df.format(calc.sum()));
 			break;
 		case "2":
-			JOptionPane.showMessageDialog(null, calc.sustrain());
+			JOptionPane.showMessageDialog(null, df.format(calc.sustrain()));
 			break;
 		case "3":
-			JOptionPane.showMessageDialog(null, calc.multiply());
+			JOptionPane.showMessageDialog(null, df.format(calc.multiply()));
 			break;
 		case "4":
-			JOptionPane.showMessageDialog(null, calc.divide());
+			JOptionPane.showMessageDialog(null, df.format(calc.divide()));
 			break;
 		case "5":
-			JOptionPane.showMessageDialog(null, calc.pow());
+			JOptionPane.showMessageDialog(null, df.format(calc.pow()));
 			break;
 		case "6":
-			JOptionPane.showMessageDialog(null, calc.squareRoot());
+			JOptionPane.showMessageDialog(null, df.format(calc.squareRoot()));
 			break;
 
 		default:
