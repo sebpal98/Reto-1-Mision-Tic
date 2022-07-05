@@ -83,5 +83,6 @@ public class view {
 
 	public static void main(String[] args) {
 		new view();
+//		Metodo para inicializar
 	}
 }
