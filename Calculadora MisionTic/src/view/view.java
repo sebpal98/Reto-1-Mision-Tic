@@ -66,6 +66,7 @@ public class view {
 			break;
 		case "4":
 			JOptionPane.showMessageDialog(null, df.format(calc.divide()));
+			
 			break;
 		case "5":
 			JOptionPane.showMessageDialog(null, df.format(calc.pow()));
